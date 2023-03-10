@@ -1,0 +1,37 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "compilerOptions": {
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "composite": true,
+      "declaration": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "noImplicitAny": false,
+      "noFallthroughCasesInSwitch": true,
+      "paths": {
+        "@codex/app": [
+          "./app/src"
+        ],
+        "@codex/server/*": [
+          "./server/src"
+        ]
+      },
+      "resolveJsonModule": true,
+      "strictPropertyInitialization": false,
+      "types": [
+        "jest",
+        "node"
+      ]
+    },
+    "exclude": [
+      "./**/build",
+      "./**/dist",
+      "./**/node_modules",
+      "node_modules"
+    ],
+    "include": [
+      "./packages/app/src/**/*",
+      "./packages/server/src/**/*"
+    ]
+  }
