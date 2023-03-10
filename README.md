@@ -53,7 +53,7 @@ APP_OPENAI_API_KEY="your_api_key"
 
 ### 5. Setup App Environment (Optional)
 
-copy `.env.local` to `.env` and change the server port (if required)
+Edit `.env.local` or rename `.env.local` to `.env` to avoid committing secrets and change the server port (if required)
 `app/.env`
 
 ```
